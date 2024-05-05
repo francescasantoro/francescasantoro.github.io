@@ -4,6 +4,29 @@
 <head>
 <title>Blonde</title>
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
   body {background-color: white;}
 h1   {color: white;}
 p    {color: back;}
@@ -24,6 +47,12 @@ body {
 </style>
 </head>
 <body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
 
 <div class="header">
   <h1>Blonde</h1>
