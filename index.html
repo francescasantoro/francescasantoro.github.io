@@ -1,20 +1,27 @@
-
-<DOCTYPE! html>
-    <html lang="en">
-        <head>
-        <title>Blonde</title>
-        <style>
-          h2 {
-            background-color: pink;
-            color: white;
-            padding: 25px;
-            text-align: center;
-          }
-p {
-  font-family: verdana;
-  font-size: 20px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
-            ul {
+
+body {
+  font-family: Georgia, Helvetica, sans-serif
+;
+}
+
+/* Style the header */
+.header {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+ul {
               list-style-type: none;
               margin: 0;
               padding: 0;
@@ -35,90 +42,86 @@ p {
             }
             
             li a:hover {
-              background-color: yellowgreen;
+              background-color:wheat;
             }
-              body {background-color: white;}
-            h1   {color: white;}
-            p    {color: back;}
-            </style>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-            body {
-              margin: 30px;
-            }
-            
-            /* Style the header */
-            .header {
-              background-color: pink;
-              padding: 20px;
-              text-align: center;
-            }
-            </style>
-            </head>
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
 <body>
-  <ul>
+
+
+
+<div class="header">
+  <h2>Blonde</h2>
+</div>
+<ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="Canzoni">Canzoni</a></li>
     <li><a href="Merchandising">Merchandising</a></li>
     <li><a href="Cantante">Cantante</a></li>
   </ul>
+  <cen
 
-<div class="header">
-  <h1>Blonde</h1>
-</div>
-<style>
-
-   <body>
-    <h1> Blonde</h1>
-     <center>
-     <img src="blonde 6.jpeg">
-     </center>
-     <div class="card">
-     <h2>L'Album</h2>
-     <p style="border: 2px solid pink;">
-      Blonde è il secondo album in studio del cantautore statunitense Frank Ocean, pubblicato il 20 agosto 2016 dall'etichetta discografica Boys Don't Cry.
-      Successore di Channel Orange (2012), Blonde, reso inizialmente disponibile in esclusiva sulle piattaforme iTunes Store ed Apple Music, vede la partecipazione di artisti del calibro di Beyoncé, André 3000, James Blake, Pharrell Williams e Kim Burrell. Scritto e prodotto nell'arco temporale di oltre tre anni, l'album è stato registrato tra New York, Los Angeles e Londra. La sua pubblicazione in formato fisico è avvenuta in concomitanza con la distribuzione di una rivista intitolata Boys Don't Cry, la quale riporta lo stesso nome dell'etichetta indipendente fondata da Ocean.
-Blonde è stato accolto con ampi consensi da parte della critica specializzata: secondo Metacritic si è trattato del terzo più presente nelle classifiche dei migliori album del 2016, mentre la rivista Time lo ha nominato album dell'anno e Pitchfork il migliore album degli anni 2010.Inoltre, la prestigiosa rivista Rolling Stone lo ha posizionato al 79º posto nella classica relativa ai 500 migliori album della storia aggiornata al 2020.
-     </p>
-     </div>
-     <center>
-      <img src="img 3 blonde.avif"
-     </center>
-     <h2>Il titolo dell'Album</h2>
-     <p style="border: 2px solid pink;">
-      Il titolo dell’album è uno degli aspetti più controversi dell’opera, a partire dalla divergenza tra lo spelling della parola che gli dà nome e la sua pronuncia. Graficamente, la copertina dell’album riporta il titolo blond, mentre in ogni altra manifestazione esso si presenta scritto come blonde. Questa differenza è stata interpretata come un riferimento alla bisessualità dell’artista, laddove "blond" sarebbe un collegamento all’universo maschile, mentre "blonde" rappresenterebbe la componente femminile. Le forme “blonde” e “blond” per uomo e donna sono tipiche del francese, in realtà in inglese è una distinzione non consistente, anche se spesso usata. In una lettera contenuta nel magazine Boys Don’t Cry, uscito a corollario dell'album, Frank Ocean ha riferito come fosse stata la foto di una bambina seduta nel retro di un'auto ad ispirare la scelta del titolo e l'idea di fondo che l'album doveva trasmettere. L'immagine a cui fa riferimento l'artista è stata realizzata dal duo fotografico The Collaborationist. A questo proposito l'artista ha riferito in un post sulla sua pagina Tumblr:
-      «Due anni fa ho trovato l'immagine di una bambina con le mani che le coprivano il viso. Una cintura di sicurezza le si allungò sul busto, risalendo fino al collo e un ciuffo di capelli biondi le rimase, per un momento, dietro le orecchie. I suoi occhi sembravano chiari e calmi ma non vuoti, stessa cosa per la strada dietro di lei. Mi sono messo al suo posto suo sedile e mi sono immaginato tutto nella mia testa. La claustrofobia mi colpisce mentre la cintura di sicurezza si stringe, impedendomi persino di sporgermi in avanti sul sedile. la pressione sugli organi interni. Mi chino avanti e indietro per sganciarla. Quindi indietro e avanti di nuovo. Eccoci — mi sono liberato. Quanto tempo della mia vita è passato all'interno di un'auto?»</p>
-<center>
-  <img src="blond 5.jpg"
-</center>
-      <h2>Pubblicazione</h2>
-      <p style="border: 2px solid pink;">
-        Il 6 aprile 2015, Frank Ocean annuncia con un post sulla sua pagina Tumblr personale, che il suo secondo album sarebbe stato pubblicato a luglio, ma così non avvenne e nessuna spiegazione fu fornita in quella circostanza]. Il The Guardian, citando la dichiarazione dell'artista scrive che egli afferma di avere due versioni per il suo prossimo lavoro, intendendo che all'album musicale sarebbe seguito a corollario un magazine, ma Ocean non lasciò trapelare altro, neppure il titolo. Billboard, intanto confermò il coinvolgimento di produttori del calibro di Hit-Boy, Rodney Jerkins, Happy Perez, Charlie Gambetta e Kevin Ristro e che il nuovo album avrebbe potuto includere il singolo Memrise del quale Ocean aveva condiviso già il testo via Tumblr. Alla fine fu Ryan Breaux, fratello di Frank Ocean, a fare chiarezza sulla data di uscita tramite un post su Instagram, scrivendo nella descrizione «BOYS DON'T CRY #JULY2016». Questo e altri indizi rispetto all'uscita del nuovo disco rivelati dal cantante portarono i fan a credere che il progetto si sarebbe intitolato Boys Don't Cry.
-</p>
-<p style="background-color:pink ;">
-  Il primo agosto 2016 è stato pubblicato un contenuto audiovisivo, in collaborazione con la piattaforma Apple Music, nel quale l'artista mostra la nuova versione del suo sito web personale boysdontcry.co. Il video mostra uno studio con una parete bianca sul cui sfondo appare l'artista.Sebbene la diretta streaming potesse essere intesa come un'anticipazione alla pubblicazione dell'album, in realtà è servita a promuovere l'uscita di Endless,avvenuta il 19 agosto 2016 in esclusiva per Apple Music. Molti fan sono stati così indotti a credere che i 45 minuti di Endless rappresentassero la seconda delle due versioni annunciate dall'artista per l'album in uscita, ma non fu così.Endless è stato pubblicato da Ocean per concludere l'impegno contrattuale con Def Jam Recordings e poter poi mettere in commercio Blonde in maniera indipendente. Nel frattempo, venne confermata l'apertura di quattro negozi a tempo per la vendita del merchandising relativo all'album. I negozi sarebbero stati collocati a New York, Los Angeles, Chicago e Londra: le immagini impiegate per sponsorizzare l'iniziativa comprendono tre diverse cover per lo stesso album.
-</p>
-<center> 
-  <img src="blond img 4.jpeg"
-</center>
-<h2>Accoglienza</h2>
-<p style="border: 2px solid pink;">
-  Blonde ha avuto un impatto complessivamente positivo sulla critica: Metacritic, basandosi su una raccolta di trentotto giudizi ottenuti dall'album, gli ha assegnato un punteggio di 87 su 100. AnyDecentMusic? assegna al medesimo album un punteggio medio di 8.4 su 10, mentre The Skinny, lo definisce come una produzione impeccabile e piena di sentimento nella quale l’artista riflette su vari temi: sé stesso, la droga, il sesso e le macchine costose. Tim Jonze del The Guardian riferisce che il disco di Frank Ocean ha un carattere innovativo sconcertante poi scrivendo a proposito del tono musicale, lo definisce muto e introspettivo: quasi del tutto privato del ritmo delle percussioni. Tara Joshi, per il quotidiano The Quietus, si sofferma sull’importanza della lentezza con cui Blonde è stato pubblicato, e sulla longevità che esso possa avere dopo un primo ascolto. Secondo la recensione di Ryan Dombal per Pitchfork, Blonde è un album pieno di contrasti tematici e musicali che seguono un disegno personale dell’artista seguito da un forte senso romantico e filosofico rispetto a Channel Orange che ha uno stile più eclettico
-</p>
-<p style="background-color:pink ;">
-  D’altra parte, alcune critiche verso l’album si sono rivelate decisamente negative. Andy Gill per The Independent definisce l’album statico e noioso per l’ascoltatore, con la sola eccezione del singolo Solo (reprise) di André 3000. Neil McCormick, per The Daily Telegraph, recensisce i testi dell’album come ricchi di dettagli che si intersecano perfettamente con la musica, ma al contempo avverte che Blonde sia effettivamente privo di una canzone in grado di spiccare tra le altre].
-</p>
-<center> 
-  <img src="blonde 6.jpeg"
-</center>
-<h2>Antefatti</h2>
-<p style="border: 2px solid pink;"> Dopo la pubblicazione nel 2012 di Channel Orange, Frank Ocean è rimasto lontano dalle scene per almeno un anno, eseguendo poche apparizioni pubbliche e comunicando principalmente attraverso la piattaforma Tumblr, all'epoca molto popolare]. Nel febbraio del 2013 l'artista rivela] di star lavorando ad un nuovo concept album con collaborazioni di rilievo tra cui quella con Tyler, the Creator, inoltre rivela di voler coinvolgere il progetto strumentale Tame Impala, capitanato da Kevin Parker. Secondo quanto dichiarato dall'artista alla BBC radio 1, l'album sarebbe stato prodotto nell'arco di alcune settimane nella località di Bora Bora, invece che a Londra. L'intento di questa dichiarazione era calcare le sensazioni lasciate da Golden Girl, bonus track dell'ultima canzone di Channel Orange realizzata in collaborazione con Tyler, The Creator.</p>
-<p style="background-color:pink ;"> Nel frattempo, Ocean ha collaborato in più occasioni con il rapper Kanye West, firmando il brano New Slaves e collaborando vocalmente al Frank's Track, tracce contenute rispettivamente negli album di West Yeezus (2013) e The Life of Pablo (2016). Le prime vere registrazioni del nuovo album sono iniziate a New York, presso l'Electric Lady Studios e sono proseguite presso l'Abbey Road Studio di Londra, in compagnia dell'ingegnere del suono Matt Mysko. Quest'ultimo ha di seguito rivelato la complessità esplorativa del lavoro portato avanti con l'artista statunitense.  Nella primavera del 2014 Ocean dichiara di aver quasi raggiunto il termine del progetto. In seguito, Billboard riporta la firma dell'artista con il gruppo Three-Six-Zero avvenuta dopo l'incontro con i manager Guy Oseary e Ron Laffite per la realizzazione del nuovo progetto; una collaborazione che lo ha portato a interagire con nuovi produttori, tra cui Happy Perez (con il quale aveva già collaborato per Nostalgia, Ultra), Charlie Gambetta e Kevin Ristro.</p>
-<p style="border: 2px solid pink;">Il 29 novembre 2014 Ocean rilascia un brano di appena due minuti sulla sua pagina Tumblr ufficiale intitolato Memrise. La traccia è priva di spiegazioni particolari e presenta un assolo di chitarra accompagnato da vocalizzazioni distorte che sfumano sul fondo. Dopo due anni di silenzio lo scalpore generato attorno alla traccia è notevole: come riferito da The Guardian, si tratta di un brano che nonostante le nuove collaborazioni firmate dall'autore mostra ancora il senso di malinconia e la volontà di sperimentazione tipiche di questo artista e già dimostrate nelle sue pubblicazioni precedenti.</p>
-<center>
-  <img src="blonde 10.webp"
-</center>
-   </body>
-</html>
+<div class="row">
+  <div class="column side" style="background-color:rgba(255, 0, 0, 0.2);">L'Album
+   <p style="border: 2px solid rgba(255, 0, 0, 0.4) ;">Blonde è il secondo album in studio del cantautore statunitense Frank Ocean, pubblicato il 20 agosto 2016 dall'etichetta discografica Boys Don't Cry.
+      Successore di Channel Orange, Blonde vede la partecipazione di artisti del calibro di Beyoncé. 
    
+      
+    </p></div>
+  <div class="column middle" style="background-color:rgba(255, 0, 0, 0.4);">Il titolo dell'Album  <p style="border: 2px solid pink;"> Il titolo dell’album è uno degli aspetti più controversi dell’opera, a partire dalla divergenza tra lo spelling della parola che gli dà nome e la sua pronuncia. Graficamente, la copertina dell’album riporta il titolo blond, mentre in ogni altra manifestazione esso si presenta scritto come blonde. Questa differenza è stata interpretata come un riferimento alla bisessualità dell’artista, laddove "blond" sarebbe un collegamento all’universo maschile, mentre "blonde" rappresenterebbe la componente femminile.  </p>
+</div>
+
+
+  
+  <div class="column side" style="background-color:rgba(255, 0, 0, 0.2);"> Pubblicazione <p style="border: 2px solid rgba(255, 0, 0, 0.4) ;">Il 6 aprile 2015, Frank Ocean annuncia con un post sulla sua pagina Tumblr personale, che il suo secondo album sarebbe stato pubblicato a luglio, ma così non avvenne e nessuna spiegazione fu fornita in quella circostanza.  </p>
+ </div>
+</div>
+
+
+
+<div class="footer">
+ 
+</div>
+
+</body>
+</html>
+
+
