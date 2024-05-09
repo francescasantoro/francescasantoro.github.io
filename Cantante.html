@@ -53,6 +53,35 @@ p {
               text-align: center;
             }
             </style>
+            <style>
+              /* Stile per il carosello */
+              .slideshow-container {
+                position: relative;
+                max-width: 800px;
+                margin: auto;
+              }
+              .mySlides {
+                display: none;
+              }
+              .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+              }
+              .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+</style>
             <body>
                    <ul>
                     <li><a href="index.html">Home</a></li>
@@ -66,5 +95,42 @@ p {
                   
                   
                        <h1>Blonde </h1> 
+                       <div class="slideshow-container">
+                        <div class="mySlides">
+                          <img src="blond 11.png" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                          <img src="borsa tela.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                          <img src="blonde 7.jpg" style="width:100%">
+                        </div>
+                        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                      </div>
+                      
+                      <script>
+                        var slideIndex = 1;
+                      
+                        showSlides(slideIndex);
+                        function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
                    </body>
 </html>
